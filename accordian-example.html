@@ -1,0 +1,16 @@
+<html>
+    <h1>I only use HTML & CSS. No JavaScript!</h1>
+    <details open>
+        <summary>Header: the arrow will become green when closed</summary>
+        <p>The arrow should be purple and open by default!</p>
+    </details>
+</html>
+
+<style>
+    summary::marker {
+        color: purple;
+    }
+    details[open] summary::marker {
+        color: green;
+    }
+</style>
