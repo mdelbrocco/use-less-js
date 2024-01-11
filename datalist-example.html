@@ -1,0 +1,34 @@
+<html>
+    <datalist id="sample-datalist"></datalist>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+    </datalist>
+</html>
+
+<!-- My takeaway here: I was NOT able to style the datalist option -->
+<style>
+#ice-cream-choice {
+    color: red;
+    background-color: blue;
+}
+
+#ice-cream-flavors {
+    color: green;
+    border: 1px solid purple;
+}
+
+datalist option {
+    color: orange;
+    background-color: cyan;
+    font-size: 18px;
+    padding:3rem;
+}
+</style>
