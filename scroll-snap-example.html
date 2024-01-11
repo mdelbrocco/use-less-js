@@ -1,0 +1,30 @@
+<html>
+    <div class="scroller">
+        <div class="option1">1</div>
+        <div class="option2">2</div>
+        <div class="option3">3</div>
+        <div class="option4">4</div>
+        <div class="option5">5</div>
+    </div>
+</html>
+
+<style>
+    .scroller {
+        scroll-snap-type: x mandatory;
+        display:flex;
+        width: 180px;
+        overflow-x:auto;
+    }
+    .scroller div {
+        flex-direction: row;
+        flex-shrink: 0;
+        flex-grow: 0;
+        scroll-snap-align: start;
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        padding:1rem;
+        border: 1px solid blue;
+        text-align: center;
+    }
+</style>
