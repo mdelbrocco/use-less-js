@@ -1,0 +1,30 @@
+<html>
+    <h1>Dialog needs ONE line of JavaScript (no jQuery, etc.)</h1>
+    <button onclick="document.getElementById('dialog').showModal()">Open Dialog</button>
+    <dialog id="dialog">
+        <form method="dialog">
+            <div class="dialog-body"><p>Here's a fun video for you to watch:</p>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Hm3JodBR-vs">Enjoy!</a>
+            </div>
+            <button>That's Pretty Neat</button>
+        </form>
+    </dialog>
+</html>
+
+<style>
+    dialog::backdrop {
+        backdrop-filter: blur(4px);
+        background-color: #ffa50057;
+    }
+
+    dialog {
+        border: 3px solid purple;
+        background-color: lavender;
+    }
+    
+    .dialog-body {
+        border: blue;
+        width: 30rem;
+        height: 20rem;
+    }
+</style>
